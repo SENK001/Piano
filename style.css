@@ -12,6 +12,7 @@ main div {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 5px 5px 20px;
+    background-color: rgb(255, 255, 255);
 }
 
 main div:active {
@@ -28,6 +29,7 @@ main {
     gap: 20px;
     width: 100vw;
     height: 95vh;
+    background-image: url('./bk.png');
 }
 
 footer {
