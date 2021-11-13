@@ -28,12 +28,22 @@ main {
     grid-template-rows: 100px 100px 100px;
     gap: 20px;
     width: 100vw;
-    height: 95vh;
+    height: 90vh;
     background-image: url('./bk.png');
 }
 
+header,
 footer {
     width: 100vw;
     height: 5vh;
     text-align: center;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 20px;
 }
