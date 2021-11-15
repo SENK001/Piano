@@ -72,6 +72,35 @@ $(function() {
             case 'm':
                 $('div:eq(20)').click();
                 break;
+
+            case '1':
+                $('div:eq(14)').click();
+                break;
+            case '2':
+                $('div:eq(15)').click();
+                break;
+            case '3':
+                $('div:eq(16)').click();
+                break;
+            case '4':
+                $('div:eq(17)').click();
+                break;
+            case '5':
+                $('div:eq(18)').click();
+                break;
+            case '6':
+                $('div:eq(19)').click();
+                break;
+            case '7':
+                $('div:eq(20)').click();
+                break;
+
+            case '8':
+                $('div:eq(7)').click();
+                break;
+            case '9':
+                $('div:eq(8)').click();
+                break;
         }
     });
 })
