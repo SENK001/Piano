@@ -43,12 +43,10 @@ footer {
 
 input {
     height: 100%;
-    width: 80%;
+    width: 100%;
     text-align: center;
     border: none;
     outline: none;
     font-size: 20px;
     background: none;
-    box-shadow: 5px 5px 10px #aaa inset, -5px -5px 10px #fff inset;
-    border-radius: 10px;
 }
