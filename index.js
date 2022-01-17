@@ -1,8 +1,29 @@
-$(function() {
-    $("div").click(function() {
-        var text = '<video src="' + "min/" + $(this).html() + ".mp3" + '" autoplay></video>'
-        $('body').append(text);
+function change() {
+    switch ($("select").val()) {
+        case "middle":
+            $("main").html('<div>C5</div><div>D5</div><div>E5</div><div>F5</div><div>G5</div><div>A5</div><div>B5</div><div>C4</div><div>D4</div><div>E4</div><div>F4</div><div>G4</div><div>A4</div><div>B4</div><div>C3</div><div>D3</div><div>E3</div><div>F3</div><div>G3</div><div>A3</div><div>B3</div>');
+            break;
+        case "low":
+            $("main").html('<div>C3</div><div>D3</div><div>E3</div><div>F3</div><div>G3</div><div>A3</div><div>B3</div><div>C2</div><div>D2</div><div>E2</div><div>F2</div><div>G2</div><div>A2</div><div>B2</div><div>C1</div><div>D1</div><div>E1</div><div>F1</div><div>G1</div><div>A1</div><div>B1</div>');
+            break;
+        case "hight":
+            $("main").html('<div>C7</div><div>D7</div><div>E7</div><div>F7</div><div>G7</div><div>A7</div><div>B7</div><div>C6</div><div>D6</div><div>E6</div><div>F6</div><div>G6</div><div>A6</div><div>B6</div><div>C5</div><div>D5</div><div>E5</div><div>F5</div><div>G5</div><div>A5</div><div>B5</div>');
+            break;
+    }
+    $("main div").click(function() {
+        var html = '<video src="' + "min/" + $(this).text() + ".mp3" + '" autoplay></video>';
+        $("body").append(html);
     });
+}
+
+
+
+$(document).ready(function() {
+    $("main div").click(function() {
+        var html = '<video src="' + "min/" + $(this).text() + ".mp3" + '" autoplay></video>';
+        $("body").append(html);
+    });
+
     $(window).keydown(function(e) {
         var k = e.key.toLowerCase();
 
